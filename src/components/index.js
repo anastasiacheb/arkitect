@@ -1,0 +1,9 @@
+export { default as Nav } from './Nav';
+export { default as Footer } from './Footer';
+export { default as Socials } from './Socials';
+export { default as PreFooter } from './PreFooter';
+export { default as ProjectItem } from './ProjectItem';
+export { default as Card } from './Card';
+export { default as Header } from './Header';
+export { default as Accordion } from './Accordion';
+export { default as Animation } from './Animation';

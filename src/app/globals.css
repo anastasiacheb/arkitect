@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-light: #ffffff;
+  --color-dark: #191919;
+  --color-muted: #f8f8f8;
+  --color-border: #e8e8e8;
+  --font-libre: var(--font-libre_baskerville);
+  --font-manrope: var(--font-manrope);
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+body {
+  background: #ffffff;
+  color: #191919;
+  font-family: var(--font-manrope);
+}
