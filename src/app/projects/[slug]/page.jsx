@@ -47,7 +47,7 @@ export default function Page({ params }) {
         <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>
         <div className="w-full h-2/3 bottom-0 absolute z-0 bg-linear-to-t from-dark to-transparent opacity-60"></div>
         <div className="text-light relative z-20 w-full max-w-390 pb-8 md:pb-15 lg:pb-24 ">
-          <div className="h-svh lg:h-dvh flex flex-col justify-center items-center">
+          <div className="h-svh lg:h-dvh flex flex-col justify-center items-center lg:pt-38.5">
             <p className="uppercase font-medium text-sm px-4 py-2.5 rounded-full border border-light w-fit leading-none hidden sm:block">
               {project.tag2}
             </p>
@@ -55,7 +55,9 @@ export default function Page({ params }) {
               {project.title1}
               <span className="font-libre block">{project.title2}</span>
             </h1>
-            <p className="text-center pt-4 text-lg md:text-xl lg:text-[32px] max-w-150">{project.text}</p>
+            <p className="text-center pt-4 text-lg md:text-xl lg:text-[32px] max-w-150 px-10 md:px-16 lg:px-36">
+              {project.text}
+            </p>
           </div>
         </div>
       </header>
@@ -118,7 +120,7 @@ export default function Page({ params }) {
           />
         </div>
       </section>
-      <div className="bg-light -mb-8 md:-mb-15 lg:-mb-24 px-10 py-16 md:px-16 md:py-24 lg:pt-24 lg:py-40 lg:px-36">
+      <div className="bg-light -mb-8 md:-mb-15 lg:-mb-24 px-10 pb-24 pt-16 md:px-16 md:pt-24 md:pb-39 lg:pb-64 lg:pt-40 lg:px-36">
         <img src="/icons/ri_double-quotes-l.svg" alt="icon" className="size-10 mx-auto mb-6 md:mb-8" />
         <p className="font-medium text-2xl lg:text-5xl text-center max-w-250 mx-auto pb-8 md:pb-10 lg:pb-16">
           "{project.comment}"

@@ -236,7 +236,7 @@ export default function Home() {
           title2="Design"
           text="With a clear plan in place, we craft a sophisticated design that blends aesthetics, functionality, and innovation. "
           different>
-          {/* <ArrowLink href="about" text="Our Story" white /> */}
+          <ArrowLink href="about" text="Our Story" white />
         </ProjectItem>
       </section>
       <PreFooter
