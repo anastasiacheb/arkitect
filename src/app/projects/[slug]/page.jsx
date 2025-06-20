@@ -2,6 +2,26 @@ import { Projects, Team } from '@/data';
 import Image from 'next/image';
 import { Socials, PreFooter, ProjectItem } from '@/components';
 
+function TableRow({ arrayLength, index, data }) {
+  let style = '';
+  if (index === 0) {
+    style = 'pb-5 md:pb-6 lg:pb-8';
+  } else if (index > 0 && index < arrayLength - 1) {
+    style = 'py-5 md:py-6 lg:py-8 border-t border-border';
+  } else {
+    style = 'pt-5 md:pt-6 lg:pt-8 border-t border-border';
+  }
+
+  const Titles = ['Type', 'Timeframes', 'Services', 'Location'];
+
+  return (
+    <div className={`${style} flex justify-between items-center`}>
+      <p className="text-xs md:text-base uppercase font-medium">{Titles[index]}</p>
+      <p className="text-xs md:text-base">{data}</p>
+    </div>
+  );
+}
+
 export async function generateStaticParams() {
   return Projects.map((project) => ({ slug: project.slug }));
 }
@@ -11,6 +31,7 @@ export default function Page({ params }) {
   const project = Projects.find((p) => p.slug === slug);
   const Index = Projects.findIndex((p) => p.slug === slug);
   const nextProject = Index < Projects.length - 1 ? Projects[Index + 1] : Projects[0];
+  const tableData = [project.tag1, project.time, project.service, project.tag2];
   return (
     <>
       <header className="rounded-t-4xl overflow-clip md:rounded-t-[60px] lg:rounded-t-[96px] relative h-auto flex justify-center items-center md:h-auto">
@@ -39,21 +60,73 @@ export default function Page({ params }) {
         </div>
       </header>
       <section className="bg-light rounded-t-4xl md:rounded-t-[60px] lg:rounded-t-[96px] -mt-8 md:-mt-15 lg:-mt-24 relative z-10 p-10 pb-0 md:p-16 md:pb-0 lg:pt-24 lg:pb-0 lg:px-36">
-        <h2 className="text-xs md:text-base uppercase font-medium text-center">Project Details</h2>
-        <div>
-          <div>
-            <h3>
+        <h2 className="text-xs md:text-base uppercase font-medium text-center pb-12 md:pb-16 lg:pb-24">
+          Project Details
+        </h2>
+        <div className="flex flex-col gap-8 md:gap-12 lg:flex-row xl:gap-32 max-w-350 mx-auto">
+          <div className="flex flex-col gap-4 lg:gap-8">
+            <h3 className="text-[32px] md:text-5xl lg:text-[56px] font-medium leading-[1.2] tracking-normal">
               {project.title3}
-              <br />
+              <br className="hidden md:block lg:hidden" />
+              <span> </span>
               {project.title4}
             </h3>
-            <p>{project.text2}</p>
-            <p>{project.text3}</p>
+            <p className="text-xl md:text-[22px] leading-[1.8]">{project.text2}</p>
+            <p className="text-xl md:text-[22px] leading-[1.8]">{project.text3}</p>
           </div>
-          <div></div>
+          <div className="bg-muted p-8 rounded-2xl md:p-10 md:rounded-4xl lg:p-16 lg:rounded-[48px] w-full lg:min-w-100 self-start xl:min-w-120 2xl:min-w-150 lg:sticky lg:top-10">
+            {tableData.map((data, index) => (
+              <TableRow key={index} index={index} data={data} arrayLength={tableData.length} />
+            ))}
+          </div>
         </div>
       </section>
-      <ProjectItem {...nextProject} />
+      <section className="bg-light p-10 pb-0 md:p-16 md:pb-0 lg:pt-24 lg:pb-0 lg:px-36">
+        <h2 className="text-xs md:text-base uppercase font-medium text-center pb-12 md:pb-16 lg:pb-24">Gallery</h2>
+        <div className="flex flex-col md:block md:columns-2 gap-4 md:gap-8 lg:gap-12">
+          <Image
+            src="/images/1image.png"
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-full object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl aspect-[670/870]"
+          />
+          <Image
+            src="/images/2image.png"
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-full object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl aspect-square md:mt-8 lg:mt-12"
+          />
+          <Image
+            src="/images/3image.png"
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-full object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl aspect-square"
+          />
+          <Image
+            src="/images/4image.png"
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-full object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl aspect-[670/870] md:mt-8 lg:mt-12"
+          />
+        </div>
+      </section>
+      <div className="bg-light -mb-8 md:-mb-15 lg:-mb-24 px-10 py-16 md:px-16 md:py-24 lg:pt-24 lg:py-40 lg:px-36">
+        <img src="/icons/ri_double-quotes-l.svg" alt="icon" className="size-10 mx-auto mb-6 md:mb-8" />
+        <p className="font-medium text-2xl lg:text-5xl text-center max-w-250 mx-auto pb-8 md:pb-10 lg:pb-16">
+          "{project.comment}"
+        </p>
+        <p className="text-xs md:text-base uppercase font-medium text-center pb-1">{project.author}</p>
+        <p className="text-xs md:text-base text-center">{project.company}</p>
+      </div>
+      <ProjectItem {...nextProject} noSticky />
     </>
   );
 }

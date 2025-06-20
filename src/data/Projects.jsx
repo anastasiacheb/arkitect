@@ -15,6 +15,9 @@ const Projects = [
       'The use of sustainable materials and energy-efficient features enhances its modern aesthetic while ensuring environmental responsibility. Every space is carefully crafted to reflect serenity and elegance, making Ocean Wave not just a building, but an architectural statement of luxury and innovation.',
     time: '2020 - 2022',
     service: 'Architecture Design',
+    comment: 'Ocean Wave is a masterpiece. The seamless integration of nature and design is simply breathtaking.',
+    author: 'JAMES CARTER',
+    company: 'CEO of Coastal Developments',
   },
   {
     slug: 'puzzle-tower',
@@ -32,6 +35,9 @@ const Projects = [
       'The tower’s sustainable design incorporates green terraces, smart energy solutions, and natural ventilation, ensuring both aesthetic appeal and environmental consciousness. Puzzle Tower is more than an architectural feat—it’s a reimagining of urban living, offering a dynamic, flexible, and future-forward residential experience.',
     time: '2020 - 2022',
     service: 'Architecture Design',
+    comment: 'This project redefines urban living. Its bold, modular design is both innovative and highly functional.',
+    author: 'OLIVER MARTIN',
+    company: 'Founder of Skyline Residences',
   },
   {
     slug: 'honey-comb',
@@ -49,6 +55,10 @@ const Projects = [
       'Inside, the layout fosters both privacy and openness, with interconnected spaces that adapt to contemporary living needs. Sustainable materials, advanced insulation, and integrated green spaces further reinforce its eco-friendly philosophy. Honey Comb is a testament to the power of biomimicry in architecture, merging form, function, and sustainability.',
     time: '2020 - 2022',
     service: 'Architecture Design',
+    comment:
+      'Honey Comb’s nature-inspired structure is not just beautiful—it’s a model of smart, sustainable architecture.',
+    author: 'DANIEL WRIGHT',
+    company: 'Director of Green Urban Solutions',
   },
   {
     slug: 'wave-house',
@@ -66,6 +76,10 @@ const Projects = [
       'Every detail, from the sculpted interiors to the choice of sustainable materials, reflects a commitment to elegance and innovation. Designed for those who appreciate both form and function, Wave House redefines luxury living by blending architectural artistry with the rhythm of nature.',
     time: '2020 - 2022',
     service: 'Architecture Design',
+    comment:
+      'Wave House is a true architectural marvel. The design flows effortlessly, creating a serene yet luxurious living experience.',
+    author: 'MICHAEL REYNOLDS',
+    company: 'CEO of Oceanview Estates',
   },
   {
     slug: 'yellow-suits',
@@ -83,6 +97,10 @@ const Projects = [
       'The interiors reflect a balance of luxury and functionality, with customizable spaces that cater to diverse lifestyles. Smart technology, sustainable features, and premium materials ensure both comfort and efficiency. More than just a building, Yellow Suites is a vibrant architectural landmark, bringing a fresh and bold perspective to contemporary cityscapes.',
     time: '2020 - 2022',
     service: 'Architecture Design',
+    comment:
+      'A perfect blend of modern luxury and functionality. Yellow Suites stands out as a true architectural landmark.',
+    author: 'JAKOB GRØNBERG',
+    company: 'Managing Partner at Metro Properties',
   },
 ];
 

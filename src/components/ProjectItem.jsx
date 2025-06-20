@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function ProjectItem({ image, title1, title2, text, tag1, tag2, different, children, slug }) {
+export default function ProjectItem({ image, title1, title2, text, tag1, tag2, different, children, slug, noSticky }) {
   return (
     <Link
       href={`/projects/${slug}`}
-      className={`${different ? '' : 'rounded-4xl md:rounded-[60px] lg:rounded-[96px]'} overflow-clip sticky top-0 block`}>
+      className={`${different ? '' : 'rounded-4xl md:rounded-[60px] lg:rounded-[96px]'}  ${noSticky ? 'relative' : 'sticky'} overflow-clip top-0 block`}>
       <Image
         src={`/images/${image}`}
         alt="building"
