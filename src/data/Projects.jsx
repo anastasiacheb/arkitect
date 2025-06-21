@@ -63,8 +63,8 @@ const Projects = [
   {
     slug: 'wave-house',
     image: 'image.png',
-    title1: 'WAVE',
-    title2: 'HOUSE',
+    title1: 'Wave',
+    title2: 'House',
     text: 'A visionary residential masterpiece inspired by the fluid movement of water',
     tag1: 'Commercial',
     tag2: 'Berlin',
