@@ -42,7 +42,7 @@ function ValueCard({ number, title, text, index }) {
 
 function TeamMember({ name, position, avatar }) {
   return (
-    <div className="break-inside-avoid pb-8 md:pb-16 lg:pb-24">
+    <div className="xl:break-inside-avoid pb-8 md:pb-0 xl:pb-24">
       <Image
         src={`/images/${avatar}`}
         alt="avatar"
@@ -50,9 +50,9 @@ function TeamMember({ name, position, avatar }) {
         height={0}
         sizes="100vw"
         // style={{ width: '100%', height: 'auto' }}
-        className="w-full h-full rounded-[64px] overflow-clip aspect-[640/870] object-cover"
+        className="w-full rounded-[64px] overflow-clip aspect-[640/870] object-cover"
       />
-      <div className="flex flex-col md:flex-row md:items-center gap-2 justify-between px-6 lg:px-16 pt-4">
+      <div className="flex flex-col xl:flex-row xl:items-center gap-2 justify-between px-6 xl:px-16 pt-4">
         <div>
           <h3 className="text-2xl lg:text-[32px] font-medium pb-2">{name}</h3>
           <p className="text-xs md:text-base uppercase font-medium">{position}</p>
@@ -129,9 +129,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-light relative z-10 p-10 pb-0 md:p-16 lg:pt-40 lg:px-36 md:pb-0 lg:pb-0 -mb-8 md:-mb-16 lg:-mb-24">
-        <div className="columns-1 md:columns-2 break-inside-avoid gap-8 md:gap-16 lg:gap-30 max-w-400 mx-auto">
-          <div className="mb-8 md:mb-16 lg:mb-24">
+      <section className="bg-light relative z-10 p-10 pb-0 md:p-16 lg:pt-40 lg:px-36 md:pb-0 lg:pb-0 -mb-8 md:mb-0 xl:-mb-24">
+        <div className="md:grid md:grid-cols-2 xl:block xl:columns-2 break-inside-avoid gap-8 md:gap-16 xl:gap-30 max-w-400 mx-auto">
+          <div className="mb-8 md:mb-0 xl:mb-24 md:col-span-2 xl:col-span-1">
             <h2 className="text-xs md:text-base uppercase font-medium pb-2">Our TEam</h2>
             <h2 className="text-5xl md:text-[56px] lg:text-[62px] font-medium pb-4 leading-[1.2]">
               Design Lies <br />

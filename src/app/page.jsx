@@ -122,9 +122,9 @@ function TeamMember({ avatar, name, position, index, teamLength }) {
         height={0}
         sizes="100vw"
         // style={{ width: '100%', height: 'auto' }}
-        className="w-full h-full object-cover rounded-3xl md:max-w-40"
+        className="w-full h-full object-cover rounded-3xl md:max-w-40 aspect-square"
       />
-      <div className="flex flex-col gap-4 lg:flex-row lg:w-full lg:gap-32 lg:items-center">
+      <div className="flex flex-col gap-4 lg:flex-row lg:w-full xl:gap-32 lg:items-center">
         <p className="text-xs md:text-base uppercase font-medium lg:hidden whitespace-nowrap w-fit">{position}</p>
         <h3 className="font-medium text-2xl lg:text-5xl lg:w-full">{name}</h3>
         <p className="text-xs md:text-base uppercase font-medium hidden lg:block whitespace-nowrap">{position}</p>

@@ -74,6 +74,7 @@ export default function Page() {
   return (
     <>
       <Header
+        video="7437509-uhd_4096_2160_25fps.mp4"
         image="image4.png"
         title="Career"
         subtitle1="Create, innovate, and elevate—be part of"
@@ -93,13 +94,13 @@ export default function Page() {
         <div className="msx-w-400 mx-auto xl:grid xl:grid-cols-2 gap-32">
           <div className="h-[calc(100vh-160px)] hidden xl:block sticky top-20 self-start">
             <Image
-              src="/images/image.png"
+              src="/images/pexels-cottonbro-7439767.jpg"
               alt="building"
               width={0}
               height={0}
               sizes="100vw"
               // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full rounded-[64px] overflow-clip"
+              className="w-full h-full rounded-[64px] overflow-clip object-cover"
             />
           </div>
           <div>

@@ -5,17 +5,17 @@ const Team = [
     position: 'CEO',
   },
   {
-    avatar: 'Image-1__.png',
+    avatar: 'pexels-cottonbro-7437079.jpg',
     name: 'Albert Flores',
     position: 'Architect',
   },
   {
-    avatar: 'Image-2__.png',
+    avatar: 'pexels-cottonbro-7428224.jpg',
     name: 'Bessie Cooper',
     position: 'Interior Designer',
   },
   {
-    avatar: 'Image-3__.png',
+    avatar: 'pexels-cottonbro-7437500.jpg',
     name: 'Annette Black',
     position: 'Exterior Designer',
   },

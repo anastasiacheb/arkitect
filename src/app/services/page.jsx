@@ -94,7 +94,7 @@ export default function Page() {
         </div>
       </section>
       <section className="px-10 md:px-16 lg:px-36 bg-light">
-        <div className="flex flex-col gap-10 md:gap-16 lg:gap-30 lg:flex-row max-w-400 mx-auto">
+        <div className="flex flex-col gap-10 md:gap-16 lg:gap-30 lg:flex-row max-w-400 mx-auto items-start">
           <div className="flex flex-col gap-10 md:gap-16 lg:gap-32">
             <div>
               <h2 className="text-5xl md:text-[56px] lg:text-[62px] font-medium pb-4 md:pb-8 leading-[1.2]">
@@ -107,7 +107,7 @@ export default function Page() {
                 to your needs.
               </p>
             </div>
-            <Image
+            {/* <Image
               src="/images/imagesdw.png"
               alt="person"
               width={0}
@@ -115,9 +115,22 @@ export default function Page() {
               sizes="100vw"
               // style={{ width: '100%', height: 'auto' }}
               className="w-full h-full object-cover rounded-4xl md:rounded-[40px] lg:rounded-[60px]"
-            />
+            /> */}
+            <div className="aspect-[640/860] w-full rounded-4xl md:rounded-[40px] lg:rounded-[60px] overflow-hidden">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                // poster="/images/imagesdw.png"
+              >
+                <source src="/videos/7438237-uhd_2160_4096_25fps.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
-          <div className="flex flex-col gap-10 md:gap-16 lg:gap-32 lg:flex-col-reverse">
+          <div className="flex flex-col gap-10 md:gap-16 lg:gap-32 lg:flex-col-reverse justify-self-start items-end">
             <div>
               <h2 className="text-5xl md:text-[56px] lg:text-[62px] font-medium pb-4 md:pb-8 leading-[1.2]">
                 Transforming ideas into architectural excellence.
@@ -129,7 +142,7 @@ export default function Page() {
                 for the future.
               </p>
             </div>
-            <Image
+            {/* <Image
               src="/images/imagehjgui.png"
               alt="person"
               width={0}
@@ -137,7 +150,20 @@ export default function Page() {
               sizes="100vw"
               // style={{ width: '100%', height: 'auto' }}
               className="w-full h-full object-cover rounded-4xl md:rounded-[40px] lg:rounded-[60px]"
-            />
+            /> */}
+            <div className="aspect-[640/860] w-full rounded-4xl md:rounded-[40px] lg:rounded-[60px] overflow-hidden">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                // poster="/images/imagehjgui.png"
+              >
+                <source src="/videos/7437512-uhd_2160_4096_25fps.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </section>

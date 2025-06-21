@@ -5,7 +5,7 @@ import { Projects } from '@/data';
 
 function FooterLink({ href, title }) {
   return (
-    <Link href={`/${href}`} className="lg:w-65">
+    <Link href={`/${href}`} className="xl:w-65 xl:block">
       {title}
     </Link>
   );
@@ -29,20 +29,20 @@ export default function Footer() {
           </div>
           <Socials color="bg-light" />
         </div>
-        <div className="text-light text-base md:text-lg flex flex-col gap-16 items-center text-center md:text-left md:items-start md:grid md:grid-cols-2 md:w-full lg:grid-cols-3 lg:max-w-148 xl:gap-29">
-          <div className="flex flex-col gap-4">
+        <div className="text-light text-base md:text-lg flex flex-col gap-16 items-center text-center md:text-left md:items-start md:grid md:grid-cols-2 md:w-full lg:grid-cols-3 lg:max-w-148 xl:gap-29 xl:w-full">
+          <div className="flex flex-col gap-4 xl:w-65">
             <FooterLink href="" title="Home" />
             <FooterLink href="projects" title="Projects" />
             <FooterLink href="services" title="Services" />
             <FooterLink href="about" title="About" />
             <FooterLink href="career" title="Career" />
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 xl:w-65">
             {Projects.map((project, index) => (
               <FooterLink key={index} href={project.slug} title={`${project.title1} ${project.title2}`} />
             ))}
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 xl:w-65">
             <FooterLink href="contact" title="Contact" />
             <FooterLink href="404" title="404 Error Page" />
           </div>
