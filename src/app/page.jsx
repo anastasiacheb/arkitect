@@ -150,7 +150,7 @@ export default function Home() {
         <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>
         <div className="w-full h-2/3 bottom-0 absolute z-0 bg-linear-to-t from-dark to-transparent opacity-60"></div>
         <div className="text-light relative z-20 w-full max-w-390 pb-8 md:pb-15 lg:pb-24 ">
-          <div className="h-svh lg:h-dvh flex flex-col justify-center items-center">
+          <div className="h-svh lg:h-dvh flex flex-col justify-center items-center lg:min-h-210.5">
             <Animation>
               <h1 className="font-manrope text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium lg:pt-38.5">
                 Your
@@ -162,7 +162,7 @@ export default function Home() {
               Designing timeless, luxurious spaces that <br /> redefine modern architecture and living.
             </p>
           </div>
-          <div className="hidden lg:flex justify-between pb-40 w-full max-w-350 mx-auto lg:pt-100">
+          <div className="hidden lg:flex justify-between pb-40 w-full max-w-350 mx-auto lg:pt-100 px-16">
             <div className="flex flex-col gap-16 max-w-150">
               <h2 className="font-medium text-5xl md:text-[56px] lg:text-[62px] leading-[1.2]">
                 We love & live <br /> architecture
