@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Socials, PreFooter, ProjectItem, Card, Animation } from '../components';
+import { Socials, PreFooter, ProjectItem, Card, Animation, AnimationScroll } from '../components';
 import { Projects, Team } from '../data';
 import { motion } from 'motion/react';
 
@@ -165,28 +165,33 @@ export default function Home() {
             </Animation>
           </div>
           <div className="hidden lg:flex justify-between pb-40 w-full max-w-350 mx-auto lg:pt-100 px-16">
-            <div className="flex flex-col gap-16 max-w-150">
-              <h2 className="font-medium text-5xl md:text-[56px] lg:text-[62px] leading-[1.2]">
-                We love & live <br /> architecture
-              </h2>
-              <ArrowLink href="about" text="Our Story" white />
-            </div>
-            <div className="font-normal text-base md:text-2xl lg:text-[32px] max-w-150">
-              <p>
-                Arkitect creates luxurious, modern spaces where innovation meets timeless elegance. Our designs push
-                boundaries, blending precision, creativity, and functionality. <br />
-                <br />
-                With a commitment to excellence, we craft architectural masterpieces that inspire and endure. Every
-                project reflects our passion for bold ideas, meticulous craftsmanship, and the future of contemporary
-                living.
-              </p>
-              <a href="mailto:hello@example.com" className="pt-12 block">
-                hello@example.com
-              </a>
-              <a href="tel:+4917612345678" className="pt-3.5 block">
-                +49 176 123 456 78
-              </a>
-            </div>
+            <AnimationScroll>
+              <div className="flex flex-col gap-16 max-w-150">
+                <h2 className="font-medium text-5xl md:text-[56px] lg:text-[62px] leading-[1.2]">
+                  We love & live <br /> architecture
+                </h2>
+                <ArrowLink href="about" text="Our Story" white />
+              </div>
+            </AnimationScroll>
+
+            <AnimationScroll>
+              <div className="font-normal text-base md:text-2xl lg:text-[32px] max-w-150">
+                <p>
+                  Arkitect creates luxurious, modern spaces where innovation meets timeless elegance. Our designs push
+                  boundaries, blending precision, creativity, and functionality. <br />
+                  <br />
+                  With a commitment to excellence, we craft architectural masterpieces that inspire and endure. Every
+                  project reflects our passion for bold ideas, meticulous craftsmanship, and the future of contemporary
+                  living.
+                </p>
+                <a href="mailto:hello@example.com" className="pt-12 block">
+                  hello@example.com
+                </a>
+                <a href="tel:+4917612345678" className="pt-3.5 block">
+                  +49 176 123 456 78
+                </a>
+              </div>
+            </AnimationScroll>
           </div>
         </div>
       </header>

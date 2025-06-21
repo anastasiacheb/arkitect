@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem, Card, Header, Accordion } from '@/components';
+import { Socials, PreFooter, ProjectItem, Card, Header, Accordion, Animation } from '@/components';
 
 const Questions = [
   {
@@ -70,22 +70,24 @@ export default function Page() {
         <div className="w-full h-full absolute z-0 bg-dark opacity-20 rounded-b-4xl md:rounded-b-[60px] lg:rounded-b-[96px]"></div>
         <div className="z-20 relative text-light w-full px-10  md:px-16 lg:px-36 pt-28 pb-16 md:pt-40 md:pb-24 lg:py-0 lg:pt-38.5">
           <div className="max-w-350 mx-auto flex flex-col gap-12 md:gap-16 lg:flex-row lg:gap-4 lg:justify-between">
-            <div className="w-125 md:w-150 mx-auto xl:mx-0">
-              <h1 className="text-[48px] md:text-[80px] xl:text-[128px] font-medium leading-[1.1] pb-4">Contact</h1>
-              <div className="font-normal text-base md:text-2xl xl:text-[26px] max-w-150">
-                <p>
-                  Have a project in mind? <br className="hidden lg:block xl:hidden" />
-                  Let’s discuss your <br className="lg:hidden xl:block" />
-                  vision and bring it to life.
-                </p>
-                <a href="mailto:hello@example.com" className="pt-9 md:pt-12 block">
-                  hello@example.com
-                </a>
-                <a href="tel:+4917612345678" className="pt-3.5 block">
-                  +49 176 123 456 78
-                </a>
+            <Animation>
+              <div className="w-125 md:w-150 mx-auto xl:mx-0">
+                <h1 className="text-[48px] md:text-[80px] xl:text-[128px] font-medium leading-[1.1] pb-4">Contact</h1>
+                <div className="font-normal text-base md:text-2xl xl:text-[26px] max-w-150">
+                  <p>
+                    Have a project in mind? <br className="hidden lg:block xl:hidden" />
+                    Let’s discuss your <br className="lg:hidden xl:block" />
+                    vision and bring it to life.
+                  </p>
+                  <a href="mailto:hello@example.com" className="pt-9 md:pt-12 block">
+                    hello@example.com
+                  </a>
+                  <a href="tel:+4917612345678" className="pt-3.5 block">
+                    +49 176 123 456 78
+                  </a>
+                </div>
               </div>
-            </div>
+            </Animation>
             <form
               action="#"
               className="bg-light text-dark max-w-125 md:max-w-150 lg:max-w-110 xl:max-w-135 mx-auto p-8 md:p-12 rounded-3xl lg:rounded-4xl w-full flex flex-col gap-5 md:gap-6 lg:gap-8 lg:mx-0">

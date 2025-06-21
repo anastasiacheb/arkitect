@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Animation } from '@/components';
 
 export default function Header({ image, title, subtitle1, subtitle2, button, video }) {
   return (
@@ -28,13 +29,15 @@ export default function Header({ image, title, subtitle1, subtitle2, button, vid
 
       <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>
       <div className="text-light relative z-20 w-full pb-8 md:pb-15 lg:pb-24 pt-13.5 md:pt-19 lg:pt-37.5 px-10 md:px-16 lg:px-36">
-        <div className="pb-10 pt-30  md:pb-20 md:pt-60  max-w-400 mx-auto">
-          <h1 className="text-[48px] md:text-[80px] lg:text-[128px] font-medium leading-[1.1] pb-4">{title}</h1>
-          <p className="text-lg md:text-xl lg:text-[32px]">
-            {subtitle1} <br className="hidden sm:block" />
-            {subtitle2}
-          </p>
-        </div>
+        <Animation>
+          <div className="pb-10 pt-30  md:pb-20 md:pt-60  max-w-400 mx-auto">
+            <h1 className="text-[48px] md:text-[80px] lg:text-[128px] font-medium leading-[1.1] pb-4">{title}</h1>
+            <p className="text-lg md:text-xl lg:text-[32px]">
+              {subtitle1} <br className="hidden sm:block" />
+              {subtitle2}
+            </p>
+          </div>
+        </Animation>
         {button && (
           <button className="bg-light text-dark uppercase font-medium leading-none text-base rounded-full px-7.5 py-5">
             See open positions

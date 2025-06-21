@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-4 xl:w-65">
             {Projects.map((project, index) => (
-              <FooterLink key={index} href={project.slug} title={`${project.title1} ${project.title2}`} />
+              <FooterLink key={index} href={`projects/${project.slug}`} title={`${project.title1} ${project.title2}`} />
             ))}
           </div>
           <div className="flex flex-col gap-4 xl:w-65">

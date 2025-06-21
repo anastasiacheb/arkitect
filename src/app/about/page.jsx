@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem, Card, Header, Accordion } from '@/components';
+import { Socials, PreFooter, ProjectItem, Card, Header, Accordion, Animation } from '@/components';
 import { Projects, Team } from '@/data';
 
 const Values = [
@@ -67,15 +67,17 @@ export default function Page() {
   return (
     <>
       <header className="bg-light rounded-t-4xl overflow-clip md:rounded-t-[60px] lg:rounded-t-[96px] text-center pt-13.5 md:pt-19 lg:pt-37.5 px-10  md:px-16 lg:px-36">
-        <div className="py-12 px-10 md:py-24 md:px-16 lg:pt-32 lg:pb-20">
-          <h1 className="text-xs md:text-base uppercase font-medium">About</h1>
-          <p className="text-[48px] md:text-[80px] lg:text-[128px] font-medium leading-[1.1] pb-2">We love design</p>
-          <p className="text-lg md:text-xl lg:text-[32px]">
-            We craft extraordinary spaces that inspire,
-            <br className="hidden sm:block" />
-            elevate, and endure beautifully.
-          </p>
-        </div>
+        <Animation>
+          <div className="py-12 px-10 md:py-24 md:px-16 lg:pt-32 lg:pb-20">
+            <h1 className="text-xs md:text-base uppercase font-medium">About</h1>
+            <p className="text-[48px] md:text-[80px] lg:text-[128px] font-medium leading-[1.1] pb-2">We love design</p>
+            <p className="text-lg md:text-xl lg:text-[32px]">
+              We craft extraordinary spaces that inspire,
+              <br className="hidden sm:block" />
+              elevate, and endure beautifully.
+            </p>
+          </div>
+        </Animation>
         <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-clip max-w-400 mx-auto aspect-[650/430] xl:aspect-[2/1]">
           <div className="flex flex-col gap-2 md:gap-4">
             <Image

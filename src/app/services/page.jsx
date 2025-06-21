@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem, Card, Header } from '@/components';
+import { Socials, PreFooter, ProjectItem, Card, Header, AnimationScroll } from '@/components';
 
 const CardsInfo = [
   {
@@ -60,11 +60,13 @@ function AwardItem({ year, title, description, index, awardLength }) {
   }
 
   return (
-    <div className={`flex flex-col gap-4 lg:flex-row lg:items-center md:gap-7 xl:gap-32 ${style} `}>
-      <p className="text-sm md:text-base uppercase font-medium">{year}</p>
-      <p className="text-sm md:text-base uppercase font-medium md:whitespace-nowrap lg:min-w-100">{title}</p>
-      <p className="text-base md:text-lg leading-[1.8]">{description}</p>
-    </div>
+    <AnimationScroll>
+      <div className={`flex flex-col gap-4 lg:flex-row lg:items-center md:gap-7 xl:gap-32 ${style} `}>
+        <p className="text-sm md:text-base uppercase font-medium">{year}</p>
+        <p className="text-sm md:text-base uppercase font-medium md:whitespace-nowrap lg:min-w-100">{title}</p>
+        <p className="text-base md:text-lg leading-[1.8]">{description}</p>
+      </div>
+    </AnimationScroll>
   );
 }
 

@@ -1,6 +1,6 @@
 import { Projects, Team } from '@/data';
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem } from '@/components';
+import { Socials, PreFooter, ProjectItem, Animation } from '@/components';
 
 function TableRow({ arrayLength, index, data }) {
   let style = '';
@@ -47,18 +47,20 @@ export default function Page({ params }) {
         <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>
         <div className="w-full h-2/3 bottom-0 absolute z-0 bg-linear-to-t from-dark to-transparent opacity-60"></div>
         <div className="text-light relative z-20 w-full max-w-390 pb-8 md:pb-15 lg:pb-24 ">
-          <div className="h-svh lg:h-dvh flex flex-col justify-center items-center lg:min-h-210.5 lg:pt-38.5">
-            <p className="uppercase font-medium text-sm px-4 py-2.5 rounded-full border border-light w-fit leading-none hidden sm:block">
-              {project.tag2}
-            </p>
-            <h1 className="font-manrope text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium">
-              {project.title1}
-              <span className="font-libre block">{project.title2}</span>
-            </h1>
-            <p className="text-center pt-4 text-lg md:text-xl lg:text-[32px] max-w-150 px-10 md:px-16 lg:px-0">
-              {project.text}
-            </p>
-          </div>
+          <Animation>
+            <div className="h-svh lg:h-dvh flex flex-col justify-center items-center lg:min-h-210.5 lg:pt-38.5">
+              <p className="uppercase font-medium text-sm px-4 py-2.5 rounded-full border border-light w-fit leading-none hidden sm:block">
+                {project.tag2}
+              </p>
+              <h1 className="font-manrope text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium">
+                {project.title1}
+                <span className="font-libre block">{project.title2}</span>
+              </h1>
+              <p className="text-center pt-4 text-lg md:text-xl lg:text-[32px] max-w-150 px-10 md:px-16 lg:px-0">
+                {project.text}
+              </p>
+            </div>
+          </Animation>
         </div>
       </header>
       <section className="bg-light rounded-t-4xl md:rounded-t-[60px] lg:rounded-t-[96px] -mt-8 md:-mt-15 lg:-mt-24 relative z-10 p-10 pb-0 md:p-16 md:pb-0 lg:pt-24 lg:pb-0 lg:px-36">
