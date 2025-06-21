@@ -9,3 +9,4 @@ export { default as Accordion } from './Accordion';
 export { default as Animation } from './Animation';
 export { default as AnimationScroll } from './AnimationScroll';
 export { default as AnimationCount } from './AnimationCount';
+export { default as AnimationParallax } from './AnimationParallax';

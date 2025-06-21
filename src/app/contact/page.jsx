@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem, Card, Header, Accordion, Animation } from '@/components';
+import { Socials, PreFooter, ProjectItem, Card, Header, Accordion, Animation, AnimationParallax } from '@/components';
 
 const Questions = [
   {
@@ -58,15 +58,17 @@ export default function Page() {
   return (
     <>
       <header className="rounded-t-4xl  overflow-clip md:rounded-t-[60px] lg:rounded-t-[96px] relative h-auto md:h-auto lg:h-[calc(100dvh-32px)] lg:min-h-210.5 lg:flex lg:justify-center lg:items-center bg-light">
-        <Image
-          src="/images/image0.png"
-          alt="building"
-          width={0}
-          height={0}
-          sizes="100vw"
-          // style={{ width: '100%', height: 'auto' }}
-          className="w-full h-full absolute object-cover rounded-b-4xl md:rounded-b-[60px] lg:rounded-b-[96px]"
-        />
+        <AnimationParallax>
+          <Image
+            src="/images/image0.png"
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            // style={{ width: '100%', height: 'auto' }}
+            className="w-full h-full absolute object-cover rounded-b-4xl md:rounded-b-[60px] lg:rounded-b-[96px]"
+          />
+        </AnimationParallax>
         <div className="w-full h-full absolute z-0 bg-dark opacity-20 rounded-b-4xl md:rounded-b-[60px] lg:rounded-b-[96px]"></div>
         <div className="z-20 relative text-light w-full px-10  md:px-16 lg:px-36 pt-28 pb-16 md:pt-40 md:pb-24 lg:py-0 lg:pt-38.5">
           <div className="max-w-350 mx-auto flex flex-col gap-12 md:gap-16 lg:flex-row lg:gap-4 lg:justify-between">

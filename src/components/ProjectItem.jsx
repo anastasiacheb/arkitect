@@ -1,23 +1,36 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { AnimationScroll } from '@/components';
+import { AnimationScroll, AnimationParallax } from '@/components';
 
 export default function ProjectItem({ image, title1, title2, text, tag1, tag2, different, children, slug, noSticky }) {
   const Wrap = different ? 'div' : Link;
   return (
     <Wrap
       {...(!different && { href: `/projects/${slug}` })}
-      className={`${different ? '' : 'rounded-4xl md:rounded-[60px] lg:rounded-[96px]'}  ${noSticky ? 'relative' : 'sticky'} overflow-clip top-0 block`}>
-      <Image
-        src={`/images/${image}`}
-        alt="building"
-        width={0}
-        height={0}
-        sizes="100vw"
-        className="w-full h-full absolute object-cover"
-      />
+      className={`${different ? '' : 'rounded-4xl md:rounded-[60px] lg:rounded-[96px]'}  ${noSticky ? 'relative' : 'sticky'} overflow-clip top-0 block `}>
+      {different ? (
+        <AnimationParallax>
+          <Image
+            src={`/images/${image}`}
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-full absolute object-cover"
+          />
+        </AnimationParallax>
+      ) : (
+        <Image
+          src={`/images/${image}`}
+          alt="building"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-full absolute object-cover"
+        />
+      )}
       {!different && <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>}
-      <div className="relative z-10 text-light lg:h-dvh lg:flex lg:flex-col lg:justify-between p-10 md:p-15 lg:p-28 lg:pb-24">
+      <div className="relative z-10 text-light lg:flex lg:flex-col lg:justify-between p-10 md:p-15 lg:p-28 lg:pb-24 lg:h-dvh">
         <AnimationScroll>
           <div className="pb-16 md:pb-32">
             <h2 className="font-libre text-[48px] md:text-[88px] lg:text-[128px] leading-none uppercase pb-5 md:pb-6 lg:pb-8 font-medium">

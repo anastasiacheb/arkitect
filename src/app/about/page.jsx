@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem, Card, Header, Accordion, Animation } from '@/components';
+import { Socials, PreFooter, ProjectItem, Card, Header, Accordion, Animation, AnimationParallax } from '@/components';
 import { Projects, Team } from '@/data';
 
 const Values = [
@@ -78,47 +78,51 @@ export default function Page() {
             </p>
           </div>
         </Animation>
-        <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-clip max-w-400 mx-auto aspect-[650/430] xl:aspect-[2/1]">
-          <div className="flex flex-col gap-2 md:gap-4">
-            <Image
-              src="/images/nastuh-abootalebi-rSpMla5RItA-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full object-cover"
-            />
-            <Image
-              src="/images/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full -mb-10 md:-mb-20 xl:-mb-40 object-cover"
-            />
-          </div>
-          <div className="flex flex-col gap-2 md:gap-4">
-            <Image
-              src="/images/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full object-cover -mt-10 md:-mt-20 xl:-mt-40"
-            />
-            <Image
-              src="/images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-clip max-w-400 mx-auto aspect-[650/430] xl:aspect-[2/1] relative">
+          <AnimationParallax simple depth={-100}>
+            <div className="flex flex-col gap-2 md:gap-4 w-full h-full -mt-5 md:-mt-10 xl:-mt-20">
+              <Image
+                src="/images/nastuh-abootalebi-rSpMla5RItA-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                // style={{ width: '100%', height: 'auto' }}
+                className="w-full h-full object-cover"
+              />
+              <Image
+                src="/images/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                // style={{ width: '100%', height: 'auto' }}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </AnimationParallax>
+          <AnimationParallax simple depth={100}>
+            <div className="flex flex-col gap-2 md:gap-4 w-full h-full">
+              <Image
+                src="/images/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                // style={{ width: '100%', height: 'auto' }}
+                className="w-full h-full object-cover -mt-15 md:-mt-30 xl:-mt-60"
+              />
+              <Image
+                src="/images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                // style={{ width: '100%', height: 'auto' }}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </AnimationParallax>
         </div>
       </header>
       <section className="bg-light relative z-10 p-10 pb-0 md:p-16 lg:pt-32 lg:px-36 md:pb-0 lg:pb-0">

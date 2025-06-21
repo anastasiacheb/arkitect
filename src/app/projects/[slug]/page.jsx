@@ -1,6 +1,6 @@
 import { Projects, Team } from '@/data';
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem, Animation } from '@/components';
+import { Socials, PreFooter, ProjectItem, Animation, AnimationParallax } from '@/components';
 
 function TableRow({ arrayLength, index, data }) {
   let style = '';
@@ -35,15 +35,17 @@ export default function Page({ params }) {
   return (
     <>
       <header className="rounded-t-4xl overflow-clip md:rounded-t-[60px] lg:rounded-t-[96px] relative h-auto flex justify-center items-center md:h-auto">
-        <Image
-          src={`/images/${project.image}`}
-          alt="building"
-          width={0}
-          height={0}
-          sizes="100vw"
-          // style={{ width: '100%', height: 'auto' }}
-          className="w-full h-full absolute object-cover"
-        />
+        <AnimationParallax>
+          <Image
+            src={`/images/${project.image}`}
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            // style={{ width: '100%', height: 'auto' }}
+            className="w-full h-full absolute object-cover"
+          />
+        </AnimationParallax>
         <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>
         <div className="w-full h-2/3 bottom-0 absolute z-0 bg-linear-to-t from-dark to-transparent opacity-60"></div>
         <div className="text-light relative z-20 w-full max-w-390 pb-8 md:pb-15 lg:pb-24 ">
