@@ -158,9 +158,11 @@ export default function Home() {
                 Place
               </h1>
             </Animation>
-            <p className="text-center pt-4 text-lg md:text-xl lg:text-[32px]">
-              Designing timeless, luxurious spaces that <br /> redefine modern architecture and living.
-            </p>
+            <Animation>
+              <p className="text-center pt-4 text-lg md:text-xl lg:text-[32px]">
+                Designing timeless, luxurious spaces that <br /> redefine modern architecture and living.
+              </p>
+            </Animation>
           </div>
           <div className="hidden lg:flex justify-between pb-40 w-full max-w-350 mx-auto lg:pt-100 px-16">
             <div className="flex flex-col gap-16 max-w-150">
