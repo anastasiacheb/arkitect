@@ -13,7 +13,7 @@ function FooterLink({ href, title }) {
 
 export default function Footer() {
   return (
-    <footer className="text-light px-10 py-12 md:px-16 md:py-20 lg:py-40 lg:px-36">
+    <footer className="text-light px-10 py-12 md:px-16 md:py-20 lg:py-40 lg:px-36 bg-dark">
       <div className="max-w-400 mx-auto flex flex-col gap-16 items-center md:flex-row md:items-start lg:justify-between">
         <div className="flex flex-col gap-4 md:gap-8 lg:gap-12 items-center md:items-start flex-none">
           <Link href="/">
