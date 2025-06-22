@@ -57,22 +57,24 @@ function ServiceItem({ number, title, description, services, index }) {
   }
 
   return (
-    <div className={`flex flex-col gap-12 md:flex-row ${style} `}>
-      <p className="text-xl md:text-2xl lg:text-[32px] font-libre md:min-w-20 lg:min-w-25">{number}</p>
-      <div className="flex flex-col gap-3 lg:flex-row lg:gap-16">
-        <h3 className="text-2xl lg:text-[32px] font-medium lg:flex-1/2">{title}</h3>
-        <div className="flex flex-col gap-12 lg:flex-1/2 lg:gap-8">
-          <p className="text-xl md:text-[22px] leading-[1.8]">{description}</p>
-          <div className="flex flex-col gap-5">
-            {services.map((service, index) => (
-              <p key={index} className="text-xs md:text-base uppercase font-medium">
-                {service}
-              </p>
-            ))}
+    <AnimationScroll>
+      <div className={`flex flex-col gap-12 md:flex-row ${style} `}>
+        <p className="text-xl md:text-2xl lg:text-[32px] font-libre md:min-w-20 lg:min-w-25">{number}</p>
+        <div className="flex flex-col gap-3 lg:flex-row lg:gap-16">
+          <h3 className="text-2xl lg:text-[32px] font-medium lg:flex-1/2">{title}</h3>
+          <div className="flex flex-col gap-12 lg:flex-1/2 lg:gap-8">
+            <p className="text-xl md:text-[22px] leading-[1.8]">{description}</p>
+            <div className="flex flex-col gap-5">
+              {services.map((service, index) => (
+                <p key={index} className="text-xs md:text-base uppercase font-medium">
+                  {service}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </AnimationScroll>
   );
 }
 
@@ -114,23 +116,25 @@ function TeamMember({ avatar, name, position, index, teamLength }) {
   }
 
   return (
-    <div className={`flex flex-col gap-6 md:flex-row md:gap-12 md:items-center  ${style}`}>
-      <Image
-        src={`/images/${avatar}`}
-        alt="building"
-        width={0}
-        height={0}
-        sizes="100vw"
-        // style={{ width: '100%', height: 'auto' }}
-        className="w-full h-full object-cover rounded-3xl md:max-w-40 aspect-square"
-      />
-      <div className="flex flex-col gap-4 lg:flex-row lg:w-full xl:gap-32 lg:items-center">
-        <p className="text-xs md:text-base uppercase font-medium lg:hidden whitespace-nowrap w-fit">{position}</p>
-        <h3 className="font-medium text-2xl lg:text-5xl lg:w-full">{name}</h3>
-        <p className="text-xs md:text-base uppercase font-medium hidden lg:block whitespace-nowrap">{position}</p>
-        <Socials color="bg-muted" />
+    <AnimationScroll>
+      <div className={`flex flex-col gap-6 md:flex-row md:gap-12 md:items-center  ${style}`}>
+        <Image
+          src={`/images/${avatar}`}
+          alt="building"
+          width={0}
+          height={0}
+          sizes="100vw"
+          // style={{ width: '100%', height: 'auto' }}
+          className="w-full h-full object-cover rounded-3xl md:max-w-40 aspect-square"
+        />
+        <div className="flex flex-col gap-4 lg:flex-row lg:w-full xl:gap-32 lg:items-center">
+          <p className="text-xs md:text-base uppercase font-medium lg:hidden whitespace-nowrap w-fit">{position}</p>
+          <h3 className="font-medium text-2xl lg:text-5xl lg:w-full">{name}</h3>
+          <p className="text-xs md:text-base uppercase font-medium hidden lg:block whitespace-nowrap">{position}</p>
+          <Socials color="bg-muted" />
+        </div>
       </div>
-    </div>
+    </AnimationScroll>
   );
 }
 

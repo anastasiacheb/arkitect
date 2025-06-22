@@ -1,5 +1,15 @@
 import Image from 'next/image';
-import { Socials, PreFooter, ProjectItem, Card, Header, Accordion, Animation, AnimationParallax } from '@/components';
+import {
+  Socials,
+  PreFooter,
+  ProjectItem,
+  Card,
+  Header,
+  Accordion,
+  Animation,
+  AnimationParallax,
+  AnimationScroll,
+} from '@/components';
 import { Projects, Team } from '@/data';
 
 const Values = [
@@ -30,13 +40,15 @@ function ValueCard({ number, title, text, index }) {
     style = 'pt-10 md:pt-12 lg:pt-16';
   }
   return (
-    <div className={`${style} flex flex-col md:flex-row md:gap-16 lg:gap-20`}>
-      <p className="font-libre text-2xl md:text-[32px] pb-8">{number}</p>
-      <div>
-        <h3 className="text-2xl lg:text-[32px] font-medium pb-4">{title}</h3>
-        <p className="text-base md:text-lg leading-[1.8]">{text}</p>
+    <AnimationScroll>
+      <div className={`${style} flex flex-col md:flex-row md:gap-16 lg:gap-20`}>
+        <p className="font-libre text-2xl md:text-[32px] pb-8">{number}</p>
+        <div>
+          <h3 className="text-2xl lg:text-[32px] font-medium pb-4">{title}</h3>
+          <p className="text-base md:text-lg leading-[1.8]">{text}</p>
+        </div>
       </div>
-    </div>
+    </AnimationScroll>
   );
 }
 
