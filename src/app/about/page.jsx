@@ -42,7 +42,7 @@ function ValueCard({ number, title, text, index }) {
   return (
     <AnimationScroll>
       <div className={`${style} flex flex-col md:flex-row md:gap-16 lg:gap-20`}>
-        <p className="font-libre text-2xl md:text-[32px] pb-8">{number}</p>
+        <p className="font-zodiak text-2xl md:text-[32px] pb-8">{number}</p>
         <div>
           <h3 className="text-2xl lg:text-[32px] font-medium pb-4">{title}</h3>
           <p className="text-base md:text-lg leading-[1.8]">{text}</p>
@@ -80,9 +80,11 @@ export default function Page() {
     <>
       <header className="bg-light rounded-t-4xl overflow-clip md:rounded-t-[60px] lg:rounded-t-[96px] text-center pt-13.5 md:pt-19 lg:pt-37.5 px-10  md:px-16 lg:px-36">
         <Animation>
-          <div className="py-12 px-10 md:py-24 md:px-16 lg:px-0 lg:pt-32 lg:pb-20 lg:-mx-30">
+          <div className="py-12 px-5 sm:px-10 md:py-24 md:px-16 lg:px-0 lg:pt-32 lg:pb-20 lg:-mx-30">
             <h1 className="text-xs md:text-base uppercase font-medium">About</h1>
-            <p className="text-[48px] md:text-[80px] lg:text-[128px] font-medium leading-[1.1] pb-2">We love design</p>
+            <p className="text-[48px] md:text-[80px] lg:text-[128px] font-medium leading-[1.1] pb-2 md:-mx-10">
+              We love design
+            </p>
             <p className="text-lg md:text-xl lg:text-[32px]">
               We craft extraordinary spaces that inspire,
               <br className="hidden sm:block" />
@@ -91,50 +93,50 @@ export default function Page() {
           </div>
         </Animation>
         <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-clip max-w-400 mx-auto aspect-[650/430] xl:aspect-[2/1] relative">
-          <AnimationParallax simple depth={-100}>
-            <div className="flex flex-col gap-2 md:gap-4 w-full h-full -mt-5 md:-mt-10 xl:-mt-20">
-              <Image
-                src="/images/nastuh-abootalebi-rSpMla5RItA-unsplash.jpg"
-                alt="building"
-                width={0}
-                height={0}
-                sizes="100vw"
-                // style={{ width: '100%', height: 'auto' }}
-                className="w-full h-full object-cover"
-              />
-              <Image
-                src="/images/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"
-                alt="building"
-                width={0}
-                height={0}
-                sizes="100vw"
-                // style={{ width: '100%', height: 'auto' }}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </AnimationParallax>
-          <AnimationParallax simple depth={100}>
-            <div className="flex flex-col gap-2 md:gap-4 w-full h-full">
-              <Image
-                src="/images/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
-                alt="building"
-                width={0}
-                height={0}
-                sizes="100vw"
-                // style={{ width: '100%', height: 'auto' }}
-                className="w-full h-full object-cover -mt-15 md:-mt-30 xl:-mt-60"
-              />
-              <Image
-                src="/images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg"
-                alt="building"
-                width={0}
-                height={0}
-                sizes="100vw"
-                // style={{ width: '100%', height: 'auto' }}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </AnimationParallax>
+          {/* <AnimationParallax simple depth={-100}> */}
+          <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+20px)]">
+            <Image
+              src="/images/nastuh-abootalebi-rSpMla5RItA-unsplash.jpg"
+              alt="building"
+              width={0}
+              height={0}
+              sizes="100vw"
+              // style={{ width: '100%', height: 'auto' }}
+              className="w-full h-full object-cover"
+            />
+            <Image
+              src="/images/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"
+              alt="building"
+              width={0}
+              height={0}
+              sizes="100vw"
+              // style={{ width: '100%', height: 'auto' }}
+              className="w-full h-full object-cover -mb-5 md:-mb-10 xl:-mb-20"
+            />
+          </div>
+          {/* </AnimationParallax> */}
+          {/* <AnimationParallax simple depth={150}> */}
+          <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+20px)] -mt-5 md:-mt-10 xl:-mt-20">
+            <Image
+              src="/images/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
+              alt="building"
+              width={0}
+              height={0}
+              sizes="100vw"
+              // style={{ width: '100%', height: 'auto' }}
+              className="w-full h-full object-cover -mt-15 md:-mt-30 xl:-mt-60"
+            />
+            <Image
+              src="/images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg"
+              alt="building"
+              width={0}
+              height={0}
+              sizes="100vw"
+              // style={{ width: '100%', height: 'auto' }}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {/* </AnimationParallax> */}
         </div>
       </header>
       <section className="bg-light relative z-10 p-10 pb-0 md:p-16 lg:pt-32 lg:px-36 md:pb-0 lg:pb-0">

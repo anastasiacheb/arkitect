@@ -56,7 +56,7 @@ export default function Page({ params }) {
               </p>
               <h1 className="font-manrope text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium">
                 {project.title1}
-                <span className="font-libre block">{project.title2}</span>
+                <span className="font-zodiak block">{project.title2}</span>
               </h1>
               <p className="text-center pt-4 text-lg md:text-xl lg:text-[32px] max-w-150 px-10 md:px-16 lg:px-0">
                 {project.text}

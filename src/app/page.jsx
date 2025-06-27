@@ -59,7 +59,7 @@ function ServiceItem({ number, title, description, services, index }) {
   return (
     <AnimationScroll>
       <div className={`flex flex-col gap-12 md:flex-row ${style} `}>
-        <p className="text-xl md:text-2xl lg:text-[32px] font-libre md:min-w-20 lg:min-w-25">{number}</p>
+        <p className="text-xl md:text-2xl lg:text-[32px] font-zodiak md:min-w-20 lg:min-w-25">{number}</p>
         <div className="flex flex-col gap-3 lg:flex-row lg:gap-16">
           <h3 className="text-2xl lg:text-[32px] font-medium lg:flex-1/2">{title}</h3>
           <div className="flex flex-col gap-12 lg:flex-1/2 lg:gap-8">
@@ -160,7 +160,7 @@ export default function Home() {
             <Animation>
               <h1 className="font-manrope text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium lg:pt-38.5">
                 Your
-                <span className="font-libre block">Dream</span>
+                <span className="font-zodiak block">Dream</span>
                 Place
               </h1>
             </Animation>
@@ -190,10 +190,10 @@ export default function Home() {
                   project reflects our passion for bold ideas, meticulous craftsmanship, and the future of contemporary
                   living.
                 </p>
-                <a href="mailto:hello@example.com" className="pt-12 block">
+                <a href="mailto:hello@example.com" className="mt-12 block">
                   hello@example.com
                 </a>
-                <a href="tel:+4917612345678" className="pt-3.5 block">
+                <a href="tel:+4917612345678" className="mt-3.5 block">
                   +49 176 123 456 78
                 </a>
               </div>

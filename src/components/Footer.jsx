@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-4">
             <FooterLink href="contact" title="Contact" />
-            <FooterLink href="404" title="404 Error Page" />
+            <FooterLink href="notfound" title="404 Error Page" />
           </div>
         </div>
       </div>

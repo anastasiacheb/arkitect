@@ -1,17 +1,39 @@
-import { Libre_Baskerville, Manrope } from 'next/font/google';
+// import { Libre_Baskerville, Manrope } from 'next/font/google';
+import { Satoshi, Zodiak } from 'next/font/local';
 import './globals.css';
 import { Nav, Footer } from '../components';
 
-const manrope = Manrope({
-  variable: '--font-manrope',
-  subsets: ['latin'],
+// const manrope = Manrope({
+//   variable: '--font-manrope',
+//   subsets: ['latin'],
+// });
+
+const satoshi = Satoshi({
+  src: [
+    {
+      path: './fonts/Satoshi-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Satoshi-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-satoshi',
 });
 
-const libre = Libre_Baskerville({
-  variable: '--font-libre_baskerville',
-  subsets: ['latin'],
-  weight: ['400'],
+const zodiak = Zodiak({
+  src: './fonts/Zodiak-Regular.woff2',
+  variable: '--font-zodiak',
 });
+
+// const libre = Libre_Baskerville({
+//   variable: '--font-libre_baskerville',
+//   subsets: ['latin'],
+//   weight: ['400'],
+// });
 
 export const metadata = {
   title: 'Create Next App',
@@ -21,7 +43,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${libre.variable} antialiased overflow-x-clip`}>
+      <body className={`${satoshi.variable} ${zodiak.variable} antialiased overflow-x-clip`}>
         <main className="p-2.5 md:p-3 lg:p-4 bg-dark font-manrope">
           <Nav />
           {children}

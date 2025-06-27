@@ -9,14 +9,14 @@ export default function ProjectItem({ image, title1, title2, text, tag1, tag2, d
       {...(!different && { href: `/projects/${slug}` })}
       className={`${different ? '' : 'rounded-4xl md:rounded-[60px] lg:rounded-[96px]'}  ${noSticky ? 'relative' : 'sticky'} overflow-clip top-0 block `}>
       {different ? (
-        <AnimationParallax>
+        <AnimationParallax depth="100">
           <Image
             src={`/images/${image}`}
             alt="building"
             width={0}
             height={0}
             sizes="100vw"
-            className="w-full h-full absolute object-cover"
+            className="w-full h-[calc(100%+100px)] -mt-10 lg:mt-0 lg:h-full absolute object-cover"
           />
         </AnimationParallax>
       ) : (
@@ -30,10 +30,10 @@ export default function ProjectItem({ image, title1, title2, text, tag1, tag2, d
         />
       )}
       {!different && <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>}
-      <div className="relative z-10 text-light lg:flex lg:flex-col lg:justify-between p-10 md:p-15 lg:p-28 lg:pb-24 lg:h-dvh">
+      <div className="relative z-10 text-light lg:flex lg:flex-col lg:justify-between p-10 md:p-15 lg:p-28 lg:pb-24 lg:h-lvh">
         <AnimationScroll>
           <div className="pb-16 md:pb-32">
-            <h2 className="font-libre text-[48px] md:text-[88px] lg:text-[128px] leading-none uppercase pb-5 md:pb-6 lg:pb-8 font-medium">
+            <h2 className="font-zodiak text-[48px] md:text-[88px] lg:text-[128px] leading-none uppercase pb-5 md:pb-6 lg:pb-8 font-medium">
               {title1}
               <span className="font-manrope block">{title2}</span>
             </h2>

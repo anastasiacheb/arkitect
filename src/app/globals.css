@@ -5,8 +5,8 @@
   --color-dark: #191919;
   --color-muted: #f8f8f8;
   --color-border: #e8e8e8;
-  --font-libre: var(--font-libre_baskerville);
-  --font-manrope: var(--font-manrope);
+  --font-zodiak: var(--font-zodiak);
+  --font-satoshi: var(--font-satoshi);
 }
 
 @layer base {
