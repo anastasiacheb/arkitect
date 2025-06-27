@@ -16,6 +16,7 @@ export default function ProjectItem({ image, title1, title2, text, tag1, tag2, d
             width={0}
             height={0}
             sizes="100vw"
+            loading="eager"
             className="w-full h-[calc(100%+100px)] -mt-10 lg:mt-0 lg:h-full absolute object-cover"
           />
         </AnimationParallax>
@@ -26,6 +27,7 @@ export default function ProjectItem({ image, title1, title2, text, tag1, tag2, d
           width={0}
           height={0}
           sizes="100vw"
+          loading="eager"
           className="w-full h-full absolute object-cover"
         />
       )}
