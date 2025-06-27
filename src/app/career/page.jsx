@@ -31,7 +31,7 @@ const Benefits = [
 function BenefitItem({ title, text }) {
   return (
     <AnimationScroll>
-      <div className="p-8 md:p-10 lg:p-12 border border-border rounded-2xl">
+      <div className="p-8 md:p-10 lg:p-12 border border-border rounded-2xl h-full">
         <h3 className="text-2xl lg:text-[32px] font-medium pb-2">{title}</h3>
         <p className="text-base md:text-lg leading-[1.8]">{text}</p>
       </div>

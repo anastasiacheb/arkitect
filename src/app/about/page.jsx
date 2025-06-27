@@ -80,7 +80,7 @@ export default function Page() {
     <>
       <header className="bg-light rounded-t-4xl overflow-clip md:rounded-t-[60px] lg:rounded-t-[96px] text-center pt-13.5 md:pt-19 lg:pt-37.5 px-10  md:px-16 lg:px-36">
         <Animation>
-          <div className="py-12 px-10 md:py-24 md:px-16 lg:pt-32 lg:pb-20">
+          <div className="py-12 px-10 md:py-24 md:px-16 lg:px-0 lg:pt-32 lg:pb-20 lg:-mx-30">
             <h1 className="text-xs md:text-base uppercase font-medium">About</h1>
             <p className="text-[48px] md:text-[80px] lg:text-[128px] font-medium leading-[1.1] pb-2">We love design</p>
             <p className="text-lg md:text-xl lg:text-[32px]">
@@ -139,7 +139,9 @@ export default function Page() {
       </header>
       <section className="bg-light relative z-10 p-10 pb-0 md:p-16 lg:pt-32 lg:px-36 md:pb-0 lg:pb-0">
         <div className="lg:grid lg:grid-cols-[42%_58%] max-w-350 mx-auto">
-          <h2 className="text-xs md:text-base uppercase font-medium pb-12 md:pb-16">Our Values</h2>
+          <h2 className="text-xs md:text-base uppercase font-medium pb-12 md:pb-16 lg:sticky self-start top-10">
+            Our Values
+          </h2>
           <div>
             {Values.map((value, index) => (
               <ValueCard key={index} {...value} index={index} />

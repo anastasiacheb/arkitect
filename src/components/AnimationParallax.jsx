@@ -12,7 +12,7 @@ export default function AnimationParallax({ children, simple, depth = 300 }) {
   const y = useParallax(scrollYProgress, depth);
 
   return (
-    <motion.div ref={ref} style={{ y }} className={`${simple ? '' : 'absolute '} w-full h-full `}>
+    <motion.div ref={ref} style={{ y }} className={`${simple ? '' : 'absolute '} w-full h-full will-change-transform`}>
       {children}
     </motion.div>
   );

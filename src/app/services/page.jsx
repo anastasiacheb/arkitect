@@ -89,7 +89,7 @@ export default function Page() {
           <img src="/icons/logo-4.svg" alt="logo" className="h-8.5 w-auto" />
           <img src="/icons/logo-5.svg" alt="logo" className="h-7.5 w-auto" />
         </div>
-        <div className="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3 max-w-350 mx-auto mt-8 md:mt-14 lg:mt-20">
+        <div className="flex flex-col gap-8 md:grid md:grid-cols-2 xl:grid-cols-3 max-w-350 mx-auto mt-8 md:mt-14 lg:mt-20">
           {CardsInfo.map((card, index) => (
             <Card key={index} {...card} />
           ))}

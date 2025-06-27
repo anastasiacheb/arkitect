@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Animation } from '@/components';
+import { Animation, AnimationParallax } from '@/components';
 
 export default function Header({ image, title, subtitle1, subtitle2, button, video }) {
   return (
@@ -16,15 +16,17 @@ export default function Header({ image, title, subtitle1, subtitle2, button, vid
           <source src={`/videos/${video}`} type="video/mp4" />
         </video>
       ) : (
-        <Image
-          src={`/images/${image}`}
-          alt="building"
-          width={0}
-          height={0}
-          sizes="100vw"
-          // style={{ width: '100%', height: 'auto' }}
-          className="w-full h-full absolute object-cover"
-        />
+        <AnimationParallax>
+          <Image
+            src={`/images/${image}`}
+            alt="building"
+            width={0}
+            height={0}
+            sizes="100vw"
+            // style={{ width: '100%', height: 'auto' }}
+            className="w-full h-full absolute object-cover"
+          />
+        </AnimationParallax>
       )}
 
       <div className="w-full h-full absolute z-0 bg-dark opacity-20"></div>
