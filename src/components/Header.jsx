@@ -23,6 +23,7 @@ export default function Header({ image, title, subtitle1, subtitle2, button, vid
             width={0}
             height={0}
             sizes="100vw"
+            loading="eager"
             // style={{ width: '100%', height: 'auto' }}
             className="w-full h-[calc(100%+120px)] -mt-30 absolute object-cover"
           />
