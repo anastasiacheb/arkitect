@@ -1,14 +1,8 @@
-// import { Libre_Baskerville, Manrope } from 'next/font/google';
-import { Satoshi, Zodiak } from 'next/font/local';
+import localFont from 'next/font/local';
 import './globals.css';
 import { Nav, Footer } from '../components';
 
-// const manrope = Manrope({
-//   variable: '--font-manrope',
-//   subsets: ['latin'],
-// });
-
-const satoshi = Satoshi({
+const satoshi = localFont({
   src: [
     {
       path: './fonts/Satoshi-Regular.woff2',
@@ -24,16 +18,10 @@ const satoshi = Satoshi({
   variable: '--font-satoshi',
 });
 
-const zodiak = Zodiak({
+const zodiak = localFont({
   src: './fonts/Zodiak-Regular.woff2',
   variable: '--font-zodiak',
 });
-
-// const libre = Libre_Baskerville({
-//   variable: '--font-libre_baskerville',
-//   subsets: ['latin'],
-//   weight: ['400'],
-// });
 
 export const metadata = {
   title: 'Create Next App',
