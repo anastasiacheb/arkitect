@@ -42,6 +42,7 @@ export default function Page({ params }) {
             width={0}
             height={0}
             sizes="100vw"
+            loading="eager"
             className="w-full h-full absolute object-cover"
           />
         </AnimationParallax>
