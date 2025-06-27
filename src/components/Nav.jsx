@@ -57,6 +57,7 @@ export default function Nav() {
       </div>
       <Socials color={socialsColor} hidden>
         <button
+          aria-label="open/close mobile menu"
           onClick={() => {
             setNavIsOpen((prev) => !prev);
           }}
