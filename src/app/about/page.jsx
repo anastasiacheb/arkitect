@@ -61,7 +61,6 @@ function TeamMember({ name, position, avatar }) {
         width={0}
         height={0}
         sizes="100vw"
-        // style={{ width: '100%', height: 'auto' }}
         className="w-full rounded-[64px] overflow-clip aspect-[640/870] object-cover"
       />
       <div className="flex flex-col xl:flex-row xl:items-center gap-2 justify-between px-6 xl:px-16 pt-4">
@@ -92,52 +91,50 @@ export default function Page() {
             </p>
           </div>
         </Animation>
-        <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-clip max-w-400 mx-auto aspect-[650/430] xl:aspect-[2/1] relative">
-          {/* <AnimationParallax simple depth={-100}> */}
-          <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+20px)]">
-            <Image
-              src="/images/nastuh-abootalebi-rSpMla5RItA-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full object-cover"
-            />
-            <Image
-              src="/images/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full object-cover -mb-5 md:-mb-10 xl:-mb-20"
-            />
+        <Animation>
+          <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-clip max-w-400 mx-auto aspect-[2/1] relative">
+            {/* <AnimationParallax simple depth={-100}> */}
+            <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+20px)]">
+              <Image
+                src="/images/nastuh-abootalebi-rSpMla5RItA-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-full object-cover"
+              />
+              <Image
+                src="/images/nastuh-abootalebi-ZtC4_rPCRXA-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-full object-cover -mb-20 md:-mb-10 lg:-mb-20"
+              />
+            </div>
+            {/* </AnimationParallax> */}
+            {/* <AnimationParallax simple depth={150}> */}
+            <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+100px)] -mt-20 sm:-mt-20 lg:-mt-26 xl:-mt-30">
+              <Image
+                src="/images/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-full object-cover"
+              />
+              <Image
+                src="/images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg"
+                alt="building"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* </AnimationParallax> */}
           </div>
-          {/* </AnimationParallax> */}
-          {/* <AnimationParallax simple depth={150}> */}
-          <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+20px)] -mt-5 md:-mt-10 xl:-mt-20">
-            <Image
-              src="/images/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full object-cover -mt-15 md:-mt-30 xl:-mt-60"
-            />
-            <Image
-              src="/images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg"
-              alt="building"
-              width={0}
-              height={0}
-              sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          {/* </AnimationParallax> */}
-        </div>
+        </Animation>
       </header>
       <section className="bg-light relative z-10 p-10 pb-0 md:p-16 lg:pt-32 lg:px-36 md:pb-0 lg:pb-0">
         <div className="lg:grid lg:grid-cols-[42%_58%] max-w-350 mx-auto">

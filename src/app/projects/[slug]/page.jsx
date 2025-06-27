@@ -42,7 +42,6 @@ export default function Page({ params }) {
             width={0}
             height={0}
             sizes="100vw"
-            // style={{ width: '100%', height: 'auto' }}
             className="w-full h-full absolute object-cover"
           />
         </AnimationParallax>

@@ -66,7 +66,6 @@ export default function Page() {
               width={0}
               height={0}
               sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
               className="w-full h-full absolute object-cover rounded-b-4xl md:rounded-b-[60px] lg:rounded-b-[96px]"
             />
             <div className="w-full h-full absolute z-0 bg-dark opacity-20 rounded-4xl md:rounded-[60px] lg:rounded-[96px]"></div>

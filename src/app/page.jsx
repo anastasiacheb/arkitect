@@ -124,7 +124,6 @@ function TeamMember({ avatar, name, position, index, teamLength }) {
           width={0}
           height={0}
           sizes="100vw"
-          // style={{ width: '100%', height: 'auto' }}
           className="w-full h-full object-cover rounded-3xl md:max-w-40 aspect-square"
         />
         <div className="flex flex-col gap-4 lg:flex-row lg:w-full xl:gap-32 lg:items-center">
@@ -150,7 +149,6 @@ export default function Home() {
             height={0}
             sizes="100vw"
             loading="eager"
-            // style={{ width: '100%', height: 'auto' }}
             className="w-full h-full absolute object-cover"
           />
         </AnimationParallax>

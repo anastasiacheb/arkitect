@@ -115,7 +115,7 @@ export default function Page() {
               width={0}
               height={0}
               sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
+              
               className="w-full h-full object-cover rounded-4xl md:rounded-[40px] lg:rounded-[60px]"
             /> */}
             <div className="aspect-[640/860] w-full rounded-4xl md:rounded-[40px] lg:rounded-[60px] overflow-hidden">
@@ -150,7 +150,7 @@ export default function Page() {
               width={0}
               height={0}
               sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
+              
               className="w-full h-full object-cover rounded-4xl md:rounded-[40px] lg:rounded-[60px]"
             /> */}
             <div className="aspect-[640/860] w-full rounded-4xl md:rounded-[40px] lg:rounded-[60px] overflow-hidden">

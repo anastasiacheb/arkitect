@@ -101,7 +101,6 @@ export default function Page() {
               width={0}
               height={0}
               sizes="100vw"
-              // style={{ width: '100%', height: 'auto' }}
               className="w-full h-full rounded-[64px] overflow-clip object-cover"
             />
           </div>
