@@ -7,7 +7,7 @@ export default function PreFooter({ section, title1, title2, link, button }) {
       <AnimationScroll>
         <h2 className="text-xs md:text-base uppercase font-medium pb-4">{section}</h2>
         <p className="text-[40px] md:text-[64px] lg:text-[96px] font-medium leading-none pb-8 lg:pb-12 lg:leading-[1.1]">
-          {title1} <br className="hidden lg:block" />
+          {title1} <br className="hidden sm:block" />
           {title2}
         </p>
         <Link

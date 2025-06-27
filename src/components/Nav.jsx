@@ -49,7 +49,7 @@ export default function Nav() {
         </Link>
       </div>
       <div
-        className={`bg-dark text-light font-manrope font-medium text-base flex flex-col rounded-4xl p-6 gap-2 sm:max-w-85 sm:w-full lg:py-2.5 lg:px-5 lg:w-fit lg:rounded-full lg:flex-row lg:gap-2 lg:max-w-none absolute ${navIsOpen ? 'top-14' : '-top-88'} left-10 sm:left-auto right-10 md:right-16 lg:static transition-all z-20 duration-300 ease-linear`}>
+        className={`bg-dark text-light font-satoshi font-medium text-base flex flex-col rounded-4xl p-6 gap-2 sm:max-w-85 sm:w-full lg:py-2.5 lg:px-5 lg:w-fit lg:rounded-full lg:flex-row lg:gap-2 lg:max-w-none absolute ${navIsOpen ? 'top-14' : '-top-88'} left-10 sm:left-auto right-10 md:right-16 lg:static transition-all z-20 duration-300 ease-linear`}>
         <NavLink href="projects" title="Projects" />
         <NavLink href="services" title="Services" />
         <NavLink href="about" title="About" />

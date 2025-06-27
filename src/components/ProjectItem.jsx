@@ -35,7 +35,7 @@ export default function ProjectItem({ image, title1, title2, text, tag1, tag2, d
           <div className="pb-16 md:pb-32">
             <h2 className="font-zodiak text-[48px] md:text-[88px] lg:text-[128px] leading-none uppercase pb-5 md:pb-6 lg:pb-8 font-medium">
               {title1}
-              <span className="font-manrope block">{title2}</span>
+              <span className="font-satoshi block">{title2}</span>
             </h2>
             <p className="max-w-150 text-base md:text-2xl lg:text-[32px]">{text}</p>
           </div>

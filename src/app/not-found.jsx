@@ -18,9 +18,9 @@ export default function NotFound() {
         <div className="w-full h-full absolute z-0 bg-dark opacity-20 rounded-t-4xl md:rounded-t-[60px] lg:rounded-t-[96px]"></div>
         <div className="z-20 relative text-light w-full px-10  md:px-16 lg:px-36 pt-28 pb-16 md:pt-40 md:pb-24 lg:pb-32 lg:pt-38.5 flex flex-col gap-6 h-full justify-end md:flex-row md:items-end md:justify-between">
           <Animation>
-            <h1 className="font-zodiak text-[48px] md:text-[88px] lg:text-[128px] leading-none uppercase pb-5 md:pb-6 lg:pb-8 font-medium">
+            <h1 className="font-satoshi text-[48px] md:text-[88px] lg:text-[128px] leading-none uppercase pb-5 md:pb-6 lg:pb-8 font-medium">
               404
-              <span className="font-manrope block">Error</span>
+              <span className="font-zodiak block">Error</span>
             </h1>
             <p className="max-w-100 text-base md:text-2xl lg:text-[32px]">
               The page your are looking for could not be found.

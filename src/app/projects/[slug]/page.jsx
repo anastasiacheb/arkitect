@@ -54,7 +54,7 @@ export default function Page({ params }) {
               <p className="uppercase font-medium text-sm px-4 py-2.5 rounded-full border border-light w-fit leading-none hidden sm:block">
                 {project.tag2}
               </p>
-              <h1 className="font-manrope text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium">
+              <h1 className="font-satoshi text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium">
                 {project.title1}
                 <span className="font-zodiak block">{project.title2}</span>
               </h1>

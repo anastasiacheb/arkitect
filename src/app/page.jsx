@@ -158,7 +158,7 @@ export default function Home() {
         <div className="text-light relative z-20 w-full max-w-390 pb-8 md:pb-15 lg:pb-24 ">
           <div className="h-svh lg:h-dvh flex flex-col justify-center items-center lg:min-h-210.5">
             <Animation>
-              <h1 className="font-manrope text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium lg:pt-38.5">
+              <h1 className="font-satoshi text-center text-[56px] md:text-[96px] lg:text-[160px] leading-none uppercase font-medium lg:pt-38.5">
                 Your
                 <span className="font-zodiak block">Dream</span>
                 Place
