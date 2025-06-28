@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${zodiak.variable} antialiased overflow-x-clip`}>
-        <main className="p-2.5 md:p-3 lg:p-4 bg-dark font-manrope md:relative md:z-10">
+        <main className="p-2.5 md:p-3 lg:p-4 bg-dark font-manrope md:relative md:z-50 will-change-transform">
           <Nav />
           {children}
         </main>
