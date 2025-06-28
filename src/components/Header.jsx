@@ -12,7 +12,8 @@ export default function Header({ image, title, subtitle1, subtitle2, button, vid
           loop
           playsInline
           preload="auto"
-          poster={`/images/${image}`}>
+          // poster={`/images/${image}`}
+        >
           <source src={`/videos/${video}`} type="video/mp4" />
         </video>
       ) : (
