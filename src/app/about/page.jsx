@@ -92,7 +92,7 @@ export default function Page() {
           </div>
         </Animation>
         <Animation>
-          <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-clip max-w-400 mx-auto aspect-[2/1] relative">
+          <div className="flex gap-2 md:gap-4 rounded-4xl md:rounded-[60px] lg:rounded-[80px] overflow-hidden aspect-[2/1] relative max-w-400 mx-auto">
             {/* <AnimationParallax simple depth={-100}> */}
             <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+20px)]">
               <Image
@@ -114,7 +114,7 @@ export default function Page() {
             </div>
             {/* </AnimationParallax> */}
             {/* <AnimationParallax simple depth={150}> */}
-            <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+100px)] -mt-20 sm:-mt-20 lg:-mt-26 xl:-mt-30">
+            <div className="flex flex-col gap-2 md:gap-4 w-full h-[calc(100%+120px)] -mt-20 sm:-mt-20 lg:-mt-26 xl:-mt-30">
               <Image
                 src="/images/nastuh-abootalebi-JdcJn85xD2k-unsplash.jpg"
                 alt="building"
